@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tong Openshift Document Latest | 快速使用 | 配置Dns</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  
+  <link href="../../latest/stylesheets/asciibinder.css" rel="stylesheet" />
+
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/images/favicon.ico"><![endif]-->
+  <meta content="Tong openshift" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://etong.tech/" style="padding:15px 0 0 20px">TongTech</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+
+
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>快速使用
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+
+
+
+            <li><a class="" href="../getting_started/index.html">开始</a></li>
+
+
+
+
+            <li><a class="" href="../getting_started/ins-openshift.html">安装Openshift Origin</a></li>
+
+
+
+
+            <li><a class="" href="../getting_started/registry-start.html">安装Registry</a></li>
+
+
+
+
+            <li><a class="" href="../getting_started/router-start.html">安装Router</a></li>
+
+
+
+
+            <li><a class=" active" href="../getting_started/dns-config.html">配置Dns</a></li>
+
+
+
+
+            <li><a class="" href="../getting_started/create-project.html">创建Project</a></li>
+
+
+
+
+            <li><a class="" href="../getting_started/create-application.html">创建Application</a></li>
+
+
+
+
+            <li><a class="" href="../getting_started/deploy-test.html">部署示例项目</a></li>
+
+
+
+
+            <li><a class="" href="../getting_started/create-service-route.html">通过route访问应用</a></li>
+
+
+      </ul>
+    </li>
+
+
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup1">
+        <span id="tgSpan1" class="fa fa-angle-right"></span>TongWeb扩展
+      </a>
+      <ul id="topicGroup1" class="collapse  list-unstyled">
+
+
+
+            <li><a class="" href="../s2i/index.html">制作Tongweb代码执行容器</a></li>
+
+
+      </ul>
+    </li>
+
+
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup2">
+        <span id="tgSpan2" class="fa fa-angle-down"></span>深入学习
+      </a>
+      <ul id="topicGroup2" class="collapse in list-unstyled">
+
+
+
+            <li><a class="" href="../welcome/index.html">openshift技术介绍</a></li>
+
+
+
+
+            <li><a class="" href="../welcome/index.html">openshift名词定义</a></li>
+
+
+
+
+            <li><a class="" href="../welcome/index.html">HAProxy</a></li>
+
+
+
+
+            <li><a class="" href="../welcome/index.html">SCC</a></li>
+
+
+
+
+            <li><a class="" href="../welcome/index.html">管理私有Register</a></li>
+
+
+
+
+            <li><a class="" href="../welcome/index.html">管理Router</a></li>
+
+
+
+
+            <li><a class="" href="../welcome/index.html">openshift SDN</a></li>
+
+
+
+
+            <li><a class="" href="../welcome/index.html">open vSwitch</a></li>
+
+
+
+
+            <li><a class="" href="../welcome/index.html">vxlan</a></li>
+
+
+      </ul>
+    </li>
+
+
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup3">
+        <span id="tgSpan3" class="fa fa-angle-down"></span>工具介绍
+      </a>
+      <ul id="topicGroup3" class="collapse in list-unstyled">
+
+
+
+            <li><a class="" href="../welcome/index.html">etcd</a></li>
+
+
+
+
+            <li><a class="" href="../welcome/index.html">SkyDns</a></li>
+
+
+
+
+            <li><a class="" href="../welcome/index.html">dnsmasq</a></li>
+
+
+
+
+            <li><a class="" href="../welcome/index.html">ovs</a></li>
+
+
+      </ul>
+    </li>
+
+
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup4">
+        <span id="tgSpan4" class="fa fa-angle-down"></span>常见问题
+      </a>
+      <ul id="topicGroup4" class="collapse in list-unstyled">
+
+
+
+            <li><a class="" href="../welcome/index.html">s2i</a></li>
+
+
+      </ul>
+    </li>
+
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>配置Dns</h2>
+        </div>
+        <div id="preamble">
+<div class="sectionbody">
+<div id="toc" class="toc">
+<div id="toctitle" class="title"></div>
+<ul class="sectlevel1">
+<li><a href="#config-dns-begin">DNS介绍</a></li>
+<li><a href="#config-dns-config">配置Dns</a></li>
+<li><a href="#config-dns-test">测试Dns</a></li>
+<li><a href="#config-dns-reference">参考文档</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="config-dns-begin"><a class="anchor" href="#config-dns-begin"></a>DNS介绍</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>这里的DNS主要是指openshift使用skydns提供的解析服务，如果我们需要在集群内部通过域名来访问Service、pod、endpoints，则需要对相关主机进行nameservice的设置。</p>
+</div>
+<div class="paragraph">
+<p>在openshift平台内部，各组件之间互相访问的默认规则为：</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 1. Dns Example Names</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Object Type</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;pod_namespace&gt;.cluster.local</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Services</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;service&gt;.&lt;pod_namespace&gt;.svc.cluster.local</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endpoints</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;name&gt;.&lt;namespace&gt;.endpoints.cluster.local</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+由于我们在openshift应用中，会通过组件的域名来进行访问，这样可以屏蔽掉ip地址的多变性。而域名的解析服务将会有skydns来完成，需要将所有使用组件域名访问的主机，dns的解析服务要用skydns。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="config-dns-config"><a class="anchor" href="#config-dns-config"></a>配置Dns</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>编辑 <code>/etc/resolv.conf</code> 文件，这里需要配置两个 <code>nameservice</code>，其中一个为 <mark>master的IP</mark> ，另一个为公共可用的DNS服务地址。openshift默认会使用master的DNS服务进行解析，如果master的DNS无法匹配到，则会使用公共的DNS服务进行查询。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="data:image/png;base64,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" alt="dns config">
+</div>
+<div class="title">图 1. 配置结果示例</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+我们通过<code>/etc/resolv.conf</code>配置<code>nameservice</code>后，在系统重启后配置会被还原，这个情况是需要去修改<code>/etc/resolvconf/resolv.conf.d/base</code>文件。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="config-dns-test"><a class="anchor" href="#config-dns-test"></a>测试Dns</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>配置完成后，我们需要测试下当前系统的dns解析服务是否是配置的结果，执行命令：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">$ dig</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="data:image/png;base64,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" alt="dig dig">
+</div>
+</div>
+<div class="paragraph">
+<p>可以看到回显信息中的 <code>SERVER: 192.168.80.132#53(192.168.80.132)</code> ，表示已经使用了我们的DNS服务进行查询了。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="config-dns-reference"><a class="anchor" href="#config-dns-reference"></a>参考文档</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://docs.openshift.org/latest/install_config/install/prerequisites.html#prereq-dns">DNS</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

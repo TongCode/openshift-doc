@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Tong Openshift Document Latest | 常见问题 | s2i</title>
+  <title>Tong Openshift Document Latest | 快速使用 | 安装Register</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -60,7 +60,7 @@
 
 
 
-            <li><a class="" href="../getting_started/registry-start.html">安装Registry</a></li>
+            <li><a class=" active" href="../getting_started/register-start.html">安装Register</a></li>
 
 
 
@@ -85,12 +85,12 @@
 
 
 
-            <li><a class="" href="../getting_started/deploy-test.html">部署示例项目</a></li>
+            <li><a class="" href="../getting_started/deploy-test.html">部署示例</a></li>
 
 
 
 
-            <li><a class="" href="../getting_started/create-service-route.html">通过route访问应用</a></li>
+            <li><a class="" href="../getting_started/create-service-router.html">通过域名访问Service</a></li>
 
 
       </ul>
@@ -99,13 +99,13 @@
 
     <li class="nav-header">
       <a class="" href="#" data-toggle="collapse" data-target="#topicGroup1">
-        <span id="tgSpan1" class="fa fa-angle-right"></span>TongWeb扩展
+        <span id="tgSpan1" class="fa fa-angle-right"></span>Source To Image
       </a>
       <ul id="topicGroup1" class="collapse  list-unstyled">
 
 
 
-            <li><a class="" href="../s2i/index.html">制作Tongweb代码执行容器</a></li>
+            <li><a class="" href="../s2i/index.html">s2i</a></li>
 
 
       </ul>
@@ -120,47 +120,47 @@
 
 
 
-            <li><a class="" href="../welcome/index.html">openshift技术介绍</a></li>
+            <li><a class="" href="../s2i/index.html">openshift技术介绍</a></li>
 
 
 
 
-            <li><a class="" href="../welcome/index.html">openshift名词定义</a></li>
+            <li><a class="" href="../s2i/index.html">openshift名词定义</a></li>
 
 
 
 
-            <li><a class="" href="../welcome/index.html">HAProxy</a></li>
+            <li><a class="" href="../s2i/index.html">HAProxy</a></li>
 
 
 
 
-            <li><a class="" href="../welcome/index.html">SCC</a></li>
+            <li><a class="" href="../s2i/index.html">SCC</a></li>
 
 
 
 
-            <li><a class="" href="../welcome/index.html">管理私有Register</a></li>
+            <li><a class=" active" href="../s2i/index.html">管理私有Register</a></li>
 
 
 
 
-            <li><a class="" href="../welcome/index.html">管理Router</a></li>
+            <li><a class="" href="../s2i/index.html">管理Router</a></li>
 
 
 
 
-            <li><a class="" href="../welcome/index.html">openshift SDN</a></li>
+            <li><a class="" href="../s2i/index.html">openshift SDN</a></li>
 
 
 
 
-            <li><a class="" href="../welcome/index.html">open vSwitch</a></li>
+            <li><a class="" href="../s2i/index.html">open vSwitch</a></li>
 
 
 
 
-            <li><a class="" href="../welcome/index.html">vxlan</a></li>
+            <li><a class="" href="../s2i/index.html">vxlan</a></li>
 
 
       </ul>
@@ -175,22 +175,22 @@
 
 
 
-            <li><a class="" href="../welcome/index.html">etcd</a></li>
+            <li><a class="" href="../s2i/index.html">etcd</a></li>
 
 
 
 
-            <li><a class="" href="../welcome/index.html">SkyDns</a></li>
+            <li><a class="" href="../s2i/index.html">SkyDns</a></li>
 
 
 
 
-            <li><a class="" href="../welcome/index.html">dnsmasq</a></li>
+            <li><a class="" href="../s2i/index.html">dnsmasq</a></li>
 
 
 
 
-            <li><a class="" href="../welcome/index.html">ovs</a></li>
+            <li><a class="" href="../s2i/index.html">ovs</a></li>
 
 
       </ul>
@@ -205,7 +205,7 @@
 
 
 
-            <li><a class=" active" href="../welcome/index.html">s2i</a></li>
+            <li><a class="" href="../s2i/index.html">s2i</a></li>
 
 
       </ul>
@@ -215,29 +215,25 @@
       </div>
       <div class="col-xs-12 col-sm-9 col-md-9 main">
         <div class="page-header">
-          <h2>Tong Openshift Document</h2>
+          <h2>安装Register</h2>
         </div>
-        <div id="preamble">
-<div class="sectionbody">
+        <!-- toc disabled -->
 <div class="paragraph">
-<p>欢迎您的阅读，文档正在整理编写中&#8230;&#8203;</p>
+<p>由于我们使用openshift会进行代码的持续部署，而部署的结果最终会生成一个的docker image来进行执行，所以我们需要使用 openshift/origin-docker-registry 来搭建一个私有的Docker Registry来进行使用。
+执行命令：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">$ oadm registry --config=安装路径/openshift.local.config/master/admin.kubeconfig --service-account=registry <i class="conum" data-value="1"></i><b>(1)</b></pre>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="need-help"><a class="anchor" href="#need-help"></a>Need Help?</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>我想快速认识openshift <a href="../getting_started/index.html">快速使用教程</a></p>
-</li>
-<li>
-<p>邮件咨询 <a href="mailto:yanchong@tongtech.com">发送邮件</a></p>
-</li>
-</ul>
-</div>
-</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>--config 参数需要指定master的admin.kubeconfig文件</td>
+</tr>
+</table>
 </div>
       </div>
     </div>
